@@ -6,19 +6,19 @@ describe IsBeautifulString do
     expect(IsBeautifulString.new.beautiful_string?('bbbaacdafe')).to be true
   end
 
-  it 'returns true for bbbaacdafe' do
+  it 'returns false for aabbb' do
     expect(IsBeautifulString.new.beautiful_string?('aabbb')).to be false
   end
 
-  it 'returns true for bbbaacdafe' do
+  it 'returns false for bbc' do
     expect(IsBeautifulString.new.beautiful_string?('bbc')).to be false
   end
 
-  it 'returns true for bbbaacdafe' do
+  it 'returns false for abcdefghijklmnopqrstuvwxyzz' do
     expect(IsBeautifulString.new.beautiful_string?('abcdefghijklmnopqrstuvwxyzz')).to be false
   end
 
-  it 'returns true for bbbaacdafe' do
+  it 'returns false for fyudhrygiuhdfeis' do
     expect(IsBeautifulString.new.beautiful_string?('fyudhrygiuhdfeis')).to be false
   end
 end
