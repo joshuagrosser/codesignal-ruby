@@ -1,5 +1,5 @@
 require 'spec_helper'
-require_relative '../is_beautiful_string'
+require_relative '../lib/is_beautiful_string'
 
 describe IsBeautifulString do
   it 'returns true for bbbaacdafe' do
